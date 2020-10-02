@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AssignmentDemo">   
+   
+    <test name="FBLoginAndRestAPIDemo">
+    <classes>
+      <class name="com.demo.tests.LoginAnProfileDetailsValidationTest"/>
+       <class name="com.demo.tests.RestAPIDemoTest"/>
+    </classes>
+  </test> 
+ 
+ </suite>  

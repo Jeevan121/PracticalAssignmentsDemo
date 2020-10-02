@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[the response of the get request is::{"status":"success","data":{"name":"Jeeva","salary":"1234","age":"25","id":5294},"message":"Successfully! Record has been added."}]]>
+    </line>
+    <line>
+      <![CDATA[the responce code200]]>
+    </line>
+    <line>
+      <![CDATA[the response status code::200]]>
+    </line>
+    <line>
+      <![CDATA[the response of the get request is::{"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}]]>
+    </line>
+    <line>
+      <![CDATA[the response status::success]]>
+    </line>
+  </reporter-output>
+  <suite name="AssignmentDemo" duration-ms="19593" started-at="2020-10-01T20:05:15Z" finished-at="2020-10-01T20:05:34Z">
+    <groups>
+    </groups>
+    <test name="FBLoginAndRestAPIDemo" duration-ms="19593" started-at="2020-10-01T20:05:15Z" finished-at="2020-10-01T20:05:34Z">
+      <class name="com.demo.tests.LoginAnProfileDetailsValidationTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.demo.tests.LoginAnProfileDetailsValidationTest@3f49dace]" name="setUp" is-config="true" duration-ms="7309" started-at="2020-10-02T01:35:15Z" finished-at="2020-10-02T01:35:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginAnProfileDetailsValidationTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.demo.tests.LoginAnProfileDetailsValidationTest@3f49dace]" name="loginAnProfileDetailsValidationTest" duration-ms="6629" started-at="2020-10-02T01:35:22Z" data-provider="LoginAnProfileDetailsValidationTest" finished-at="2020-10-02T01:35:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jkborale@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Jeevantkumar]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Jeevantkumar Borale]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAnProfileDetailsValidationTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.tests.LoginAnProfileDetailsValidationTest@3f49dace]" name="tearDown" is-config="true" duration-ms="747" started-at="2020-10-02T01:35:34Z" finished-at="2020-10-02T01:35:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demo.tests.LoginAnProfileDetailsValidationTest -->
+      <class name="com.demo.tests.RestAPIDemoTest">
+        <test-method status="PASS" signature="postRestAssured(java.lang.String, java.lang.String)[pri:0, instance:com.demo.tests.RestAPIDemoTest@1e397ed7]" name="postRestAssured" duration-ms="3934" started-at="2020-10-02T01:35:29Z" data-provider="PostRestAPIDemo" finished-at="2020-10-02T01:35:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name,salary,age]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jeeva,1234,25]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[the response of the get request is::{"status":"success","data":{"name":"Jeeva","salary":"1234","age":"25","id":5294},"message":"Successfully! Record has been added."}]]>
+            </line>
+            <line>
+              <![CDATA[the responce code200]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postRestAssured -->
+        <test-method status="PASS" signature="restAPIDemoTest(java.lang.String, java.lang.String)[pri:0, instance:com.demo.tests.RestAPIDemoTest@1e397ed7]" name="restAPIDemoTest" duration-ms="157" started-at="2020-10-02T01:35:34Z" data-provider="RestAPIDemoTest" finished-at="2020-10-02T01:35:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tiger Nixon, Garrett Winters, Ashton Cox, Cedric Kelly, Airi Satou, Brielle Williamson, Herrod Chandler, Rhona Davidson, Colleen Hurst, Sonya Frost, Jena Gaines, Quinn Flynn, Charde Marshall, Haley Kennedy, Tatyana Fitzpatrick, Michael Silva, Paul Byrd, Gloria Little, Bradley Greer, Dai Rios, Jenette Caldwell, Yuri Berry, Caesar Vance, Doris Wilder]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[the response status code::200]]>
+            </line>
+            <line>
+              <![CDATA[the response of the get request is::{"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}]]>
+            </line>
+            <line>
+              <![CDATA[the response status::success]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- restAPIDemoTest -->
+      </class> <!-- com.demo.tests.RestAPIDemoTest -->
+    </test> <!-- FBLoginAndRestAPIDemo -->
+  </suite> <!-- AssignmentDemo -->
+</testng-results>
