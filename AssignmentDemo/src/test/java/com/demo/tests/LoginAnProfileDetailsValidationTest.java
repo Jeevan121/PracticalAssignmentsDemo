@@ -47,5 +47,4 @@ public class LoginAnProfileDetailsValidationTest extends BaseTest{
 		getDriver().quit();
 	}
 	
-
 }

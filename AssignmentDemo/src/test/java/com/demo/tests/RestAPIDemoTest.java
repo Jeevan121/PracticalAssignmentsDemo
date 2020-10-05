@@ -23,9 +23,12 @@ public class RestAPIDemoTest extends BaseTest{
 	public void restAPIDemoTest(String empNme,String	empId){
 		
 		Response res=getRestAssuredUtils().getRequest(AutomationConstants.restApiEndPoint+AutomationConstants.apiEmpResource);
-		Assert.assertEquals(res.getStatusCode(),200);
+		Assert.assertEquals(res.getStatusCode(),200,"not connected to to server");
+		
 		Reporter.log("the response status code::"+res.getStatusCode());
 		Reporter.log("the response of the get request is::"+res.asString());
+		
+		System.out.println(res.asString());
 		
 		JSONObject jsonObj = getJsonUtils().parseJsonResponse(res);
 		
@@ -60,13 +63,16 @@ public class RestAPIDemoTest extends BaseTest{
 	
 	@Test(dataProviderClass=DataProviderUtils.class,dataProvider="PostRestAPIDemo",enabled=true,alwaysRun=true)
 	public void postRestAssured(String keys,String	values) throws JsonParseException, JsonMappingException, IOException{
+		
 		//Framing the Json Request Object and getting keys and values from the test input data from excel file
 		HashMap<String,String> jsonRequestMap = getJsonUtils().getJSonRequestMap(keys.split(","), values.split(","));
+		
 		// Framing the Json object with the HashMap
 		String framedJsonRequest = getJsonUtils().frameJsonRrquest(jsonRequestMap);
 		//Hitting to the Server with Rest Assured Libararies and passing end point, json request file as string and then resource 
 		Response res=getRestAssuredUtils().restAssuredPost(AutomationConstants.restApiEndPoint,framedJsonRequest,AutomationConstants.apiEmpCreate);
 		Reporter.log("the response of the get request is::"+res.asString());
+		
 		//Validating the status code should be 200
 		Assert.assertEquals(res.getStatusCode(), 200,"the status code is not matching");
 		Reporter.log("the responce code"+res.getStatusCode());
@@ -79,12 +85,16 @@ public class RestAPIDemoTest extends BaseTest{
 		
 		//Validating the Json Response Against Framed Json hash map
 		JSONObject dataJsonObj=  (JSONObject) jsonObj.get("data");
+		
 		//get the response from the data json object
 		Map resMap = getJsonUtils().getMapFromJsonObject(dataJsonObj);
+		
+		
 		// validating the json request map against response map
 		Assert.assertEquals(resMap.get("name"),jsonRequestMap.get("name"),"names are not matching");
 		Assert.assertEquals(resMap.get("salary"),jsonRequestMap.get("salary"),"names are not matching");
 		Assert.assertEquals(resMap.get("age"),jsonRequestMap.get("age"),"names are not matching");
+		
 		//validating the message
 		Assert.assertEquals(jsonObj.get("message"), "Successfully! Record has been added.","record is not created");
 		

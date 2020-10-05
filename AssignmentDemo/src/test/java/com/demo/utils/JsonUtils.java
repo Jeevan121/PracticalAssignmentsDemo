@@ -17,6 +17,7 @@ public class JsonUtils {
 	public  String frameJsonRrquest(HashMap<String, String> map){
 		JSONObject obj = new JSONObject();
 		obj.putAll(map);
+		System.out.println("the framed json request::"+obj.toJSONString());
 		return obj.toJSONString();
 	}
 	

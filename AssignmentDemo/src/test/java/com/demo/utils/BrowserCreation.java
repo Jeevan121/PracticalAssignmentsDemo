@@ -16,35 +16,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BrowserCreation {
 	
 	private WebDriver driver;
-	public WebDriver createBrowser1(){
-		final String driverPath = System.getProperty("user.dir") +File.separator+"driver"+File.separator+"chromedriver.exe";
-		System.setProperty("webdriver.chrome.driver", driverPath);
-		final ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-web-security");
-        options.addArguments("--allow-running-insecure-content");
-        options.addArguments("--disable-extensions");
-        options.addArguments("test-type");
-        options.addArguments("--start-maximized");
-        driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	    driver.get(AutomationConstants.applicationUrl);
-        return driver;
-       
-	}
 	
-	public WebDriver createBrowser2(){
-		WebDriverManager.chromedriver().setup();
-		final ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-web-security");
-        options.addArguments("--allow-running-insecure-content");
-        options.addArguments("--disable-extensions");
-        options.addArguments("test-type");
-        options.addArguments("--start-maximized");
-        driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	    driver.get(AutomationConstants.applicationUrl);
-        return driver;
-	}
 	
 	public WebDriver createBrowser() {
 	    try {

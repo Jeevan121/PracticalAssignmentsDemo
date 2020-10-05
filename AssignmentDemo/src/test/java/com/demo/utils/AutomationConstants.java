@@ -11,7 +11,7 @@ public class AutomationConstants {
 	public static String chrome="chrome";
 	
 	public static String apiEmpResource="employees";
-	public static String apiEmpCreate="/create";
+	public static String apiEmpCreate="create";
 	
 
 

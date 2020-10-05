@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.demo.tests.RestAPIDemoTest">
+      <class name="com.demo.tests.LoginAnProfileDetailsValidationTest">
         <methods>
-          <include name="postRestAssured" invocation-numbers="0"/>
+          <include name="loginAnProfileDetailsValidationTest" invocation-numbers="1"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.demo.tests.RestAPIDemoTest -->
+      </class> <!-- com.demo.tests.LoginAnProfileDetailsValidationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
